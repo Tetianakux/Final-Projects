@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>IngamesHub</title>
+</head>
+<style>
+    body {
+        background: #E8F9FD;
+        margin: auto;
+
+
+    }
+
+    h1 {
+        text-align: center;
+        color: #2155CD;
+
+    }
+
+    h2 {
+        text-align: center;
+        color: #2155CD;
+        border: 3px solid #2155CD;
+        border-radius: 10px;
+        line-height: 15px;
+        font-size: 50px;
+        padding: 20px;
+        font: 1.2em "Fira Sans", sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 15px;
+
+    }
+
+    .introduction {
+        line-height: 1.5;
+        font-size: 20px;
+        font: "Fira Sans", sans-serif;
+        display: block;
+        margin: 15px;
+
+
+    }
+
+    .wiki {
+        font-size: 25px;
+        font: "Fira Sans", sans-serif;
+        line-height: 1.5;
+        display: block;
+        text-decoration: 0;
+        color: #2155CD;
+        margin: 15px;
+        transition: all 200ms ease-in-out;
+
+
+
+    }
+
+    .wiki:hover {
+
+        color: #0AA1DD
+    }
+
+    p {
+        font: "Fira Sans", sans-serif;
+        line-height: 1.5;
+        font-size: 20px;
+        margin: 15px;
+
+
+    }
+
+    button {
+        display: block;
+        margin: 0 auto;
+        background: #2155CD;
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px #2155CD;
+
+
+    }
+
+    button:hover {
+        background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
+        cursor: pointer;
+    }
+
+    .author {
+        text-align: center;
+        font: "Fira Sans", sans-serif;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .content {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 20px;
+
+    }
+
+    .p2 {
+        text-align: center;
+        font-size: 20px;
+    }
+</style>
+
+<body>
+    <div class="content">
+        <h1>
+            Disney World of Board Games
+        </h1>
+
+        <h2>
+            Short Description of Board Games!
+        </h2>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/664/original/share-default.14fadd993578b9916f855cebafb71e62.png?1679833436"
+            alt="Title of Disney">
+        <div class="introduction">
+            Board games are tabletop games that typically use pieces. These pieces are moved or placed on a pre-marked
+            board
+            (playing surface) and often include elements of table, card, role-playing, and miniatures games as well.
+        </div>
+        <span><a href="https://en.wikipedia.org/wiki/Board_game" target="_blank" class="wiki"> 👉Learn more on
+                Wikipedia</a></span>
+        <hr />
+
+        <p>
+            One of the best ways to spend a family game night is with Disney board games. Disney board games provide
+            hours
+            of fun
+            and allow the family a chance to bond over something everyone loves, Disney!
+            Playing games inside is a fun way to spend time with family and friends while also getting some
+            relaxation.
+            <em>
+                <a href="https://www.ingameshub.com/disney-board-games/" target="_blank">
+                    Top 15
+                    Disney Board Games
+                </a>
+            </em>is a perfect list of entertaining board games to have on hand for when you
+            host
+            family game
+            evenings.
+            When it comes to these kinds of activities.
+            <br>
+        <div class=p2><strong> Disney board games are by far the most fantastic option.
+        </div></strong>
+        </br>
+        </p>
+        <button class="knowMore">
+            Know more about Board Games
+        </button>
+
+        <div class="author">
+            <br>This page was built by
+            <span><a href="https://www.instagram.com/tetiana_fursenko/" target="_blank">Tetiana Fursenko</a></span>
+            </br>
+        </div>
+    </div>
+    <script>
+        function boardGame() {
+            let name = prompt("What is your name?")
+            let email = prompt("What is your email address?")
+            if (name.length > 0 && email.length > 0) {
+                alert("Thank you " + name + "! We'll be in touch by email 😉")
+            } else {
+                alert("Have a nice day😄")
+            }
+
+        }
+        let button = document.querySelector(".knowMore");
+        button.addEventListener("click", boardGame)
+    </script>
+</body>
+
+
+
+
+
+</html>
